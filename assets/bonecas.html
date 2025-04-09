@@ -41,8 +41,6 @@
             <span id="preco">R$ {{ card.valor }}</span>
             <button
             :class="{
-              'btn-default': card.inStock > 0,
-              'btn-almost': card.inStock < 5 && card.inStock > 0,
               'btn-sold-out': card.inStock === 0
             }"
             :disabled="card.inStock === 0">

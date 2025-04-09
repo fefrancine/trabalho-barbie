@@ -95,12 +95,12 @@ createApp({
                     inStock: 10
                 },
                 {
-                    title: 'Barbie Bailarina',
+                    title: 'Barbie Bombeira',
                     image: "/assets/imagens/bonecas/boneca12.jpg",
-                    description: 'Com sapatilhas e tutu, Barbie Bailarina encanta com movimentos graciosos no palco dos seus sonhos.',
-                    valor: '89,90',
+                    description: 'Com acessórios de bombeiro, Barbie Bombeira encanta com sua coragem e determinação',
+                    valor: '150,00',
                     link: "/assets/bonecaCompra.html",
-                    inStock: 10
+                    inStock: 3
                 },
                 {
                     title: 'Princesa Edição Limitada',
@@ -183,18 +183,18 @@ createApp({
                     inStock: 10
                 },
                 {
-                    title: 'Barbie Arqueóloga',
-                    image: "/assets/imagens/bonecas/boneca23.png",
-                    description: 'barbie 23',
-                    valor: '',
+                    title: 'Barbie Astronauta',
+                    image: "/assets/imagens/bonecas/boneca23.jpg",
+                    description: 'Barbie Astronauta é uma verdadeira exploradora do espaço, pronta para combinar ciência e moda em uma só missão',
+                    valor: '150,00',
                     link: "/assets/bonecaCompra.html",
-                    inStock: 10
+                    inStock: 4
                 },
                 {
-                    title: 'Barbie Estilista',
-                    image: "/assets/imagens/bonecas/boneca24.png",
-                    description: 'barbie 24',
-                    valor: '',
+                    title: 'Barbie Professora',
+                    image: "/assets/imagens/bonecas/boneca24.jpg",
+                    description: 'Barbie Professora é uma verdadeira inspiração para as futuras gerações, com seu amor pelo ensino e aprendizado',
+                    valor: '109,90',
                     link: "/assets/bonecaCompra.html",
                     inStock: 10
                 },
