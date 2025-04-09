@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="shortcut icon" href="/assets/imagens/icons/barbie-icon.jpg" type="image/x-icon"/>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="/assets/script.js" defer></script>    
     <title>Bonecas</title>
 </head>
 <body>
@@ -29,5 +31,27 @@
           />
         </div>
       </div>
+
+      <div id="app">
+        <div v-for="(card, index) in cards" :key="index" class="cardCompra">
+          <img :src="card.image" alt="Imagem da boneca" class="card-img" />
+          <h2>{{ card.title }}</h2>
+          <p>{{ card.description }}</p>
+          <div class="card-footer">
+            <span id="preco">R$ {{ card.valor }}</span>
+            <button
+            :class="{
+              'btn-default': card.inStock > 0,
+              'btn-almost': card.inStock < 5 && card.inStock > 0,
+              'btn-sold-out': card.inStock === 0
+            }"
+            :disabled="card.inStock === 0">
+            <a :href="card.link" v-if="card.inStock > 0">{{ buttonText(card.inStock) }}</a>
+            <span v-else>{{ buttonText(card.inStock) }}</span>
+          </button>
+          </div>
+        </div>
+      </div>
+
 </body>
 </html>
