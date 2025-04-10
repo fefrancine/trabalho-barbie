@@ -261,15 +261,23 @@ body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
-.footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    gap: 20px;
+.barbie-footer2 {
+    background-color: rgb(242, 97, 136); ;
+    color: rgb(0, 0, 0);
+    padding: 40px 20px 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin-top: 90vh;
 }
 
+.barbie-footer2 h4 {
+    color: rgb(0, 0, 0);
+}
 
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
 
 .footer-links ul {
     list-style: none;
@@ -311,7 +319,6 @@ h4 {
 
 .footer-bottom {
     margin-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding-top: 15px;
     font-size: 14px;
     position: relative;
@@ -324,12 +331,27 @@ h4 {
     max-width: 80px;
 }
 
+.contact-section p:hover {
+    text-decoration: underline;
+}
+
+/* CARDS DE COMPRA */
+
+.titlePage h1 {
+    color: white;
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 #app {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
+    margin-bottom: 50px;
 }
 
 .cardCompra {
@@ -410,4 +432,62 @@ h4 {
 
 .btn-sold-out {
     cursor: not-allowed;
+}
+
+.cardCompra :disabled {
+    background-color: #555;
+}
+
+.cardCompra button:disabled:hover {
+    background-color: #555;
+}
+
+/* CARROSSEL DE IMAGENS*/
+
+.carrossel {
+    display: flex;
+    overflow: hidden;
+}
+
+.cardCarrossel {
+    flex: 1;
+    height: 200px;
+    overflow: hidden;
+    transition: 0.3s all ease;
+}
+
+.cardCarrossel:hover {
+    flex: 2;
+}
+
+.cardCarrossel img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+/* SAIBA MAIS*/
+
+.body-saiba-mais {
+    background-color: white;
+}
+
+.info-saiba-mais {
+    background-color: rgb(242, 97, 136);
+    width: 60%;
+    height: 50vh;
+    margin-top: 10vh;
+    margin-left: 10vh;
+    border-radius: 10px;
+}
+
+.info-saiba-mais2 {
+    background-color:  rgb(242, 97, 136);
+    width: 60%;
+    height: 50vh;
+    margin-top: 10vh;
+    position: absolute;
+    right: 0;
+    margin-right: 10vh;
+    border-radius: 10px;
 }
