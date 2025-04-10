@@ -1,55 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/style.css">
-    <link rel="shortcut icon" href="/assets/imagens/icons/barbie-icon.jpg" type="image/x-icon"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/imagens/icons/barbie-icon.jpg"
+      type="image/x-icon"
+    />
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="/assets/script.js" defer></script>    
+    <script src="/assets/script.js" defer></script>
     <title>Bonecas</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="nav">
-        <div class="logo">
-          <img src="/assets/imagens/logos/logo-nav.png" alt="logo menu" />
+      <div class="logo">
+        <img src="/assets/imagens/logos/logo-nav.png" alt="logo menu" />
+      </div>
+      <div class="links-nav">
+        <ul>
+          <li><a href="/assets/index.html">Home</a></li>
+          <li><a href="/assets/bonecas.html">Bonecas</a></li>
+          <li><a href="/assets/saiba-mais.html">Saiba Mais</a></li>
+        </ul>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="O que procura?" class="input-search" />
+        <img
+          class="icon"
+          src="/assets/imagens/icons/lupa.png"
+          alt="lupa de pesquisa"
+        />
+      </div>
+    </div>
+
+    <div class="titlePage">
+      <h1>Bonecas</h1>
+    </div>
+
+    <div id="app">
+      <div v-for="(card, index) in cards" :key="index" class="cardCompra">
+        <img :src="card.image" alt="Imagem da boneca" class="card-img" />
+        <h2>{{ card.title }}</h2>
+        <p>{{ card.description }}</p>
+        <div class="card-footer">
+          <span id="preco">R$ {{ card.valor }}</span>
+
+          <button
+            :class="{
+              'btn-sold-out': card.inStock === 0,
+              'btn-running-out': card.inStock < 5 && card.inStock > 0
+            }"
+            :style="card.inStock < 5 && card.inStock > 0 ? { width: '100px'} : {}"
+            :disabled="card.inStock === 0"
+          >
+            <a :href="card.link" v-if="card.inStock > 0"
+              >{{ buttonText(card.inStock) }}</a
+            >
+            <span v-else>{{ buttonText(card.inStock) }}</span>
+          </button>
         </div>
-        <div class="links-nav">
+      </div>
+    </div>
+
+    <footer class="barbie-footer">
+      <div class="footer-content">
+        <div class="contact-section">
+          <h4>Contato</h4>
+          <p>Telefone: (00)00000-0000</p>
+          <p>Email: barbie@gmail.com</p>
+          <p>CEP: 00000-000</p>
+          <p></p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
           <ul>
             <li><a href="/assets/index.html">Home</a></li>
             <li><a href="/assets/bonecas.html">Bonecas</a></li>
             <li><a href="/assets/saiba-mais.html">Saiba Mais</a></li>
           </ul>
         </div>
-  
-        <div class="search-box">
-          <input type="text" placeholder="O que procura?" class="input-search" />
-          <img
-            class="icon"
-            src="/assets/imagens/icons/lupa.png"
-            alt="lupa de pesquisa"
-          />
-        </div>
-      </div>
-
-      <div id="app">
-        <div v-for="(card, index) in cards" :key="index" class="cardCompra">
-          <img :src="card.image" alt="Imagem da boneca" class="card-img" />
-          <h2>{{ card.title }}</h2>
-          <p>{{ card.description }}</p>
-          <div class="card-footer">
-            <span id="preco">R$ {{ card.valor }}</span>
-            <button
-            :class="{
-              'btn-sold-out': card.inStock === 0
-            }"
-            :disabled="card.inStock === 0">
-            <a :href="card.link" v-if="card.inStock > 0">{{ buttonText(card.inStock) }}</a>
-            <span v-else>{{ buttonText(card.inStock) }}</span>
-          </button>
+        <div class="social-media">
+          <h4>Siga a Barbie</h4>
+          <div class="social-icons">
+            <a href="#"
+              ><img
+                src="/assets/imagens/icons/instagram.png"
+                alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img
+                src="/assets/imagens/icons/facebook.png"
+                alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="/assets/imagens/icons/youtube.png"
+                alt="YouTube"
+            /></a>
           </div>
         </div>
       </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Barbie™ - Todos os direitos reservados.</p>
+        <img
+          src="/assets/imagens/logos/logo-nav.png"
+          alt="Barbie Logo"
+          class="barbie-logo"
+        />
+      </div>
+    </footer>
 
-</body>
+  </body>
 </html>
