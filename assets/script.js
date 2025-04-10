@@ -185,7 +185,7 @@ createApp({
                 {
                     title: 'Barbie Astronauta',
                     image: "/assets/imagens/bonecas/boneca23.jpg",
-                    description: 'Barbie Astronauta é uma verdadeira exploradora do espaço, pronta para combinar ciência e moda em uma só missão',
+                    description: 'Barbie Astronauta é uma verdadeira exploradora, pronta para combinar ciência e moda em uma só missão',
                     valor: '150,00',
                     link: "/assets/bonecaCompra.html",
                     inStock: 4
@@ -199,42 +199,42 @@ createApp({
                     inStock: 10
                 },
                 {
-                    title: 'Barbie Pintora',
-                    image: "/assets/imagens/bonecas/bonec25.png",
-                    description: 'barbie 25',
+                    title: 'Barbie Cientista',
+                    image: "/assets/imagens/bonecas/boneca25.jpg",
+                    description: 'Barbie Cientista é uma verdadeira exploradora do mundo da ciencia, pronta para descobrir novas possibilidades',
+                    valor: '109,90',
+                    link: "/assets/bonecaCompra.html",
+                    inStock: 0
+                },
+                {
+                    title: 'Barbie Escritora',
+                    image: "/assets/imagens/bonecas/boneca26.jpg",
+                    description: 'Barbie Escritora é uma verdadeira contadora de histórias, pronta para inspirar a imaginação de todos com suas palavras',
                     valor: '',
                     link: "/assets/bonecaCompra.html",
                     inStock: 10
                 },
                 {
-                    title: 'Barbie Escultora',
-                    image: "/assets/imagens/bonecas/boneca26.png",
-                    description: 'barbie 26',
-                    valor: '',
+                    title: 'Barbie Cantora',
+                    image: "/assets/imagens/bonecas/boneca27.jpg",
+                    description: 'Barbie Cantora é uma verdadeira estrela da música, pronta para brilhar nos palcos e conquistar corações com sua voz',
+                    valor: '109,90',
                     link: "/assets/bonecaCompra.html",
                     inStock: 10
                 },
                 {
-                    title: 'Barbie Designer Gráfico',
-                    image: "/assets/imagens/bonecas/boneca27.png",
-                    description: 'barbie 27',
-                    valor: '',
-                    link: "/assets/bonecaCompra.html",
-                    inStock: 10
-                },
-                {
-                    title: 'Barbie Arquiteta Paisagista',
+                    title: 'Barbie Programadora',
                     image: "/assets/imagens/bonecas/boneca28.png",
-                    description: 'barbie 28',
-                    valor: '',
+                    description: 'Barbie Programadora é uma verdadeira artista do design, pronta para criar espaços incríveis e cheios de vida',
+                    valor: '150,00',
                     link: "/assets/bonecaCompra.html",
-                    inStock: 10
+                    inStock: 4
                 },
                 {
-                    title: 'Barbie Engenheira Ambiental',
+                    title: 'Barbie Surfista',
                     image: "/assets/imagens/bonecas/boneca29.png",
-                    description: 'barbie 29',
-                    valor: '',
+                    description: 'Barbie Surfista é uma verdadeira aventureira do mar, pronta para pegar ondas e viver momentos inesquecíveis na praia',
+                    valor: '150,00',
                     link: "/assets/bonecaCompra.html",
                     inStock: 10
                 },
