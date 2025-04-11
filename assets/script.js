@@ -239,26 +239,26 @@ createApp({
                     inStock: 10
                 },
                 {
-                    title: 'Barbie Engenheira de Software',
-                    image: "/assets/imagens/bonecas/boneca30.png",
-                    description: 'barbie 30',
-                    valor: '',
+                    title: 'Barbie Gari',
+                    image: "/assets/imagens/bonecas/boneca30.jpg",
+                    description: 'Barbie Gari é uma verdadeira heroína do dia a dia, pronta para cuidar da cidade e deixar tudo mais bonito e limpo',
+                    valor: '150,00',
+                    link: "/assets/bonecaCompra.html",
+                    inStock: 4
+                },
+                {
+                    title: 'Barbie (TEA)',
+                    image: "/assets/imagens/bonecas/boneca31.jpg",
+                    description: 'Barbie (TEA) foi feita para inspirar o amor e aceitação, das diferenças e a beleza de cada um',
+                    valor: '150,00',
                     link: "/assets/bonecaCompra.html",
                     inStock: 10
                 },
                 {
-                    title: 'Barbie Arquiteta',
-                    image: "/assets/imagens/bonecas/boneca31.png",
-                    description: 'barbie 31',
-                    valor: '',
-                    link: "/assets/bonecaCompra.html",
-                    inStock: 10
-                },
-                {
-                    title: 'Barbie Arqueóloga',
-                    image: "/assets/imagens/bonecas/boneca32.png",
-                    description: 'barbie 32',
-                    valor: '',
+                    title: 'Ken da Barbie',
+                    image: "/assets/imagens/bonecas/boneca32.jpg",
+                    description: 'Ken é um verdadeiro amigo da Barbie, sempre pronto para aventuras e momentos especiais juntos',
+                    valor: '109,90',
                     link: "/assets/bonecaCompra.html",
                     inStock: 10
                 }
