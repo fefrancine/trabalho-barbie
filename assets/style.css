@@ -31,14 +31,14 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 20vh;
+    gap: 5vh;
+    margin-left: 110vh;
 }
 
 .nav ul li {
-    margin: 0 50px;
     font-weight: bold;
     font-style: oblique;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .nav ul li a {
@@ -266,7 +266,7 @@ body {
     color: rgb(0, 0, 0);
     padding: 40px 20px 20px;
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    margin-top: 90vh;
+    margin-top: 10vh;
 }
 
 .barbie-footer2 h4 {
@@ -475,19 +475,42 @@ h4 {
 .info-saiba-mais {
     background-color: rgb(242, 97, 136);
     width: 60%;
-    height: 50vh;
     margin-top: 10vh;
     margin-left: 10vh;
     border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .info-saiba-mais2 {
-    background-color:  rgb(242, 97, 136);
+    background-color: rgb(242, 97, 136);
     width: 60%;
-    height: 50vh;
     margin-top: 10vh;
-    position: absolute;
-    right: 0;
+    margin-left: auto;
     margin-right: 10vh;
     border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-saiba-mais .img-saiba-mais img,
+.info-saiba-mais2 .img-saiba-mais2 img {
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.info-saiba-mais p, 
+.info-saiba-mais2 p{
+    color: white;
+    max-width: 600px;
+    width: 100%;
+    font-size: 18px;
 }
