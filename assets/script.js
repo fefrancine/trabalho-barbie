@@ -241,7 +241,7 @@ createApp({
                 {
                     title: 'Barbie Gari',
                     image: "/assets/imagens/bonecas/boneca30.jpg",
-                    description: 'Barbie Gari é uma verdadeira heroína do dia a dia, pronta para cuidar da cidade e deixar tudo mais bonito e limpo',
+                    description: 'Barbie Gari é uma verdadeira heroína do dia a dia, pronta para cuidar da cidade e deixar tudo mais bonito',
                     valor: '150,00',
                     link: "/assets/bonecaCompra.html",
                     inStock: 4
@@ -268,11 +268,11 @@ createApp({
     methods: {
         buttonText(inStock) {
             if (inStock === 0) {
-                return "Esgotado";
+                return "exhausted";
             } else if (inStock < 5) {
-                return "Acabando";
+                return "few units";
             } else {
-                return "Comprar";
+                return "buy";
             }
         }
     }

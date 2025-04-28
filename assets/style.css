@@ -79,7 +79,7 @@ body {
 .bag {
     width: 23px;
     margin-left: 10px;
-    
+
 }
 
 /* CARDS */
@@ -262,14 +262,7 @@ body {
 /* FOOTER */
 
 .barbie-footer {
-    background: white;
-    color: rgb(0, 0, 0);
-    padding: 40px 20px 20px;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-}
-
-.barbie-footer2 {
-    background-color: rgb(242, 97, 136);
+    background-color: rgb(246, 245, 246);
     color: rgb(0, 0, 0);
     padding: 40px 20px 20px;
     font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -364,8 +357,8 @@ h4 {
 .cardCompra {
     width: 280px;
     height: 370px;
-    background-color: white;
-    border-radius: 12px;
+    background-color: rgb(246, 245, 246);
+    border-radius: 20px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -377,7 +370,7 @@ h4 {
 }
 
 .cardCompra:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -456,7 +449,7 @@ h4 {
     width: 82px;
 }
 
-.adicionar img{
+.adicionar img {
     margin-left: 8vh;
 }
 
@@ -486,16 +479,21 @@ h4 {
 
 /* SAIBA MAIS*/
 
-.body-saiba-mais {
-    background-color: white;
+.cards-saiba-mais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10vh;
 }
 
 .info-saiba-mais {
-    background-color: rgb(242, 97, 136);
-    width: 60%;
+    background-color: rgb(246, 245, 246);
+    width: 30vh;
+    height: 40vh;
     margin-top: 10vh;
     margin-left: 10vh;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     gap: 20px;
     padding: 20px;
@@ -503,31 +501,15 @@ h4 {
     flex-wrap: wrap;
 }
 
-.info-saiba-mais2 {
-    background-color: rgb(242, 97, 136);
+.info-saiba-mais .img-saiba-mais img{
     width: 60%;
-    margin-top: 10vh;
-    margin-left: auto;
-    margin-right: 10vh;
-    border-radius: 10px;
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.info-saiba-mais .img-saiba-mais img,
-.info-saiba-mais2 .img-saiba-mais2 img {
-    width: 100%;
     max-width: 200px;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
-.info-saiba-mais p, 
-.info-saiba-mais2 p{
-    color: white;
+.info-saiba-mais p {
+    color: rgb(28, 28, 28);
     max-width: 600px;
     width: 100%;
     font-size: 18px;
