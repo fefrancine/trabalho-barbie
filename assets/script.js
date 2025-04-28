@@ -233,7 +233,7 @@ createApp({
                 {
                     title: 'Barbie Surfista',
                     image: "/assets/imagens/bonecas/boneca29.png",
-                    description: 'Barbie Surfista é uma verdadeira aventureira do mar, pronta para pegar ondas e viver momentos inesquecíveis na praia',
+                    description: 'Barbie Surfista é uma verdadeira aventureira do mar, pronta para pegar ondas e viver momentos inesquecíveis',
                     valor: '150,00',
                     link: "/assets/bonecaCompra.html",
                     inStock: 10
@@ -270,7 +270,7 @@ createApp({
             if (inStock === 0) {
                 return "Esgotado";
             } else if (inStock < 5) {
-                return "Quase acabando";
+                return "Acabando";
             } else {
                 return "Comprar";
             }

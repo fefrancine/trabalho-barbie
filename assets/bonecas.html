@@ -34,6 +34,9 @@
           alt="lupa de pesquisa"
         />
       </div>
+      <div class="bag">
+        <a href="/assets/sacola.html"><img src="imagens/icons/bag.png" alt=""></a>
+      </div>
     </div>
 
     <div class="titlePage">
@@ -48,6 +51,9 @@
         <div class="card-footer">
           <span id="preco">R$ {{ card.valor }}</span>
 
+          <div class="adicionar">
+            <a href="sacola.html"><img src="imagens/icons/bag2.png" alt=""></a>      
+          </div>
           <button
             :class="{
               'btn-sold-out': card.inStock === 0,
