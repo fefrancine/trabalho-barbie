@@ -1,6 +1,25 @@
 
 const { createApp } = Vue;
 
+function adicionarAoCarrinho(card) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existente = cart.find(item => item.name === card.title);
+
+    if (existente) {
+        existente.quantity += 1;
+    } else {
+        cart.push({
+            name: card.title,
+            price: "R$" + card.valor,
+            image: card.image,
+            quantity: 1
+        });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(card.title + " foi adicionada à sacola!");
+}
+
 createApp({
     data() {
         return {
@@ -268,12 +287,15 @@ createApp({
     methods: {
         buttonText(inStock) {
             if (inStock === 0) {
-                return "exhausted";
+                return "Comprar";
             } else if (inStock < 5) {
-                return "few units";
+                return "Acabando";
             } else {
-                return "buy";
+                return "Comprar";
             }
+        },
+        adicionar(card) {
+            adicionarAoCarrinho(card);
         }
     }
 }).mount('#app');

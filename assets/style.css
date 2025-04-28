@@ -185,6 +185,7 @@ body {
 .sobre-texto h1 {
     margin: 10px 0;
     color: rgb(242, 97, 136);
+
 }
 
 .sobre-texto p {
@@ -206,7 +207,7 @@ body {
     margin-top: 5vh;
     max-width: 650px;
     text-align: left;
-    margin-left: 20vh;
+    margin-left: 17vh;
 }
 
 .texto-informacoes h1 {
@@ -216,6 +217,7 @@ body {
     color: rgb(242, 97, 136);
     font-family: 'Pacifico', cursive;
     line-height: 1;
+
 }
 
 .texto-informacoes p {
@@ -248,15 +250,49 @@ body {
 #img-info {
     position: relative;
     left: 74%;
+    animation: animação1 3s forwards;
+    animation-delay: 1s;
 }
 
 #img-info img {
     width: 400px;
+
 }
 
 #img-info2 {
     position: relative;
     width: 200px;
+    animation: animação 3s forwards;
+    animation-delay: 1s;
+}
+
+
+@keyframes animação {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: translateX(270px);
+    }
+
+    100% {
+        transform: translateX(0.1);
+    }
+}
+
+@keyframes animação1 {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: translateX(-270px);
+    }
+
+    100% {
+        transform: translateX(0.1);
+    }
 }
 
 /* FOOTER */
@@ -501,7 +537,7 @@ h4 {
     flex-wrap: wrap;
 }
 
-.info-saiba-mais .img-saiba-mais img{
+.info-saiba-mais .img-saiba-mais img {
     width: 60%;
     max-width: 200px;
     height: 100%;
@@ -513,4 +549,108 @@ h4 {
     max-width: 600px;
     width: 100%;
     font-size: 18px;
+}
+
+/* SACOLA */
+
+.sacola-body {
+    background-color: rgb(255, 255, 255);
+}
+
+header h1 {
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    margin-top: 10vh;
+    color:  #d63384;
+}
+
+.carrinho-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f06292;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.sacola-tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.sacola-tabela th, .sacola-tabela td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+.sacola-total {
+    margin-left: 75%;
+    bottom: 0;
+    margin-bottom: 2vh;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao-finalizar {
+    background-color: #3a6c3d;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.botao-finalizar:hover {
+    background-color: #5cb85c;
+}
+
+.sacola-total h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #000000;
+    flex-grow: 1; 
+    margin-top: 2vh;
 }

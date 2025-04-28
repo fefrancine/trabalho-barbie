@@ -50,10 +50,8 @@
         <p>{{ card.description }}</p>
         <div class="card-footer">
           <span id="preco">R$ {{ card.valor }}</span>
-          <div class="adicionar">
-            <a href="sacola.html"><img src="imagens/icons/bag2.png" alt=""></a>      
-          </div>
           <button
+            @click="adicionar(card)"
             :class="{
               'btn-sold-out': card.inStock === 0,
               'btn-running-out': card.inStock < 5 && card.inStock > 0
@@ -61,7 +59,7 @@
             :style="card.inStock < 5 && card.inStock > 0 ? { width: '100px'} : {}"
             :disabled="card.inStock === 0"
           >
-            <a :href="card.link" v-if="card.inStock > 0"
+            <a :href="" v-if="card.inStock > 0"
               >{{ buttonText(card.inStock) }}</a
             >
             <span v-else>{{ buttonText(card.inStock) }}</span>
