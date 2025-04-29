@@ -35,7 +35,9 @@
         />
       </div>
       <div class="bag">
-        <a href="/assets/sacola.html"><img src="imagens/icons/bag.png" alt=""></a>
+        <a href="/assets/sacola.html"
+          ><img src="imagens/icons/bag.png" alt=""
+        /></a>
       </div>
     </div>
 
@@ -45,7 +47,9 @@
 
     <div id="app">
       <div v-for="(card, index) in cards" :key="index" class="cardCompra">
-        <img :src="card.image" alt="Imagem da boneca" class="card-img" />
+        <a :href="'/assets/bonecaCompra.html?id=' + card.id">
+          <img :src="card.image" alt="Imagem da boneca" class="card-img" />
+        </a>
         <h2>{{ card.title }}</h2>
         <p>{{ card.description }}</p>
         <div class="card-footer">
@@ -59,14 +63,11 @@
             :style="card.inStock < 5 && card.inStock > 0 ? { width: '100px'} : {}"
             :disabled="card.inStock === 0"
           >
-            <a :href="" v-if="card.inStock > 0"
-              >{{ buttonText(card.inStock) }}</a
-            >
+            <span v-if="card.inStock > 0">{{ buttonText(card.inStock) }}</span>
             <span v-else>{{ buttonText(card.inStock) }}</span>
           </button>
         </div>
       </div>
-
     </div>
 
     <footer class="barbie-footer">
@@ -90,19 +91,13 @@
           <h4>Siga a Barbie</h4>
           <div class="social-icons">
             <a href="#"
-              ><img
-                src="/assets/imagens/icons/instagram.png"
-                alt="Instagram"
+              ><img src="/assets/imagens/icons/instagram.png" alt="Instagram"
             /></a>
             <a href="#"
-              ><img
-                src="/assets/imagens/icons/facebook.png"
-                alt="Facebook"
+              ><img src="/assets/imagens/icons/facebook.png" alt="Facebook"
             /></a>
             <a href="#"
-              ><img
-                src="/assets/imagens/icons/youtube.png"
-                alt="YouTube"
+              ><img src="/assets/imagens/icons/youtube.png" alt="YouTube"
             /></a>
           </div>
         </div>
@@ -116,6 +111,5 @@
         />
       </div>
     </footer>
-
   </body>
 </html>

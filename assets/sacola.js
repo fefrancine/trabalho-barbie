@@ -16,8 +16,8 @@ function carregarCarrinho() {
             </td>
             <td>${card.price}</td>
             <td>
-                <input type="number" value="${card.quantity}" min="1" onchange="atualizarQuantidade(${index}, this.value)">
-                <button onclick="removerProduto(${index})">Remover</button>
+            <input type="number" class="quantidade-input" value="${card.quantity}" min="1" onchange="atualizarQuantidade(${index}, this.value)">
+            <button class="remover-btn" onclick="removerProduto(${index})">Remover</button>
             </td>
         `;
         tbody.appendChild(row);
