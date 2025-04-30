@@ -608,7 +608,9 @@ main {
     border-radius: 15px;
     cursor: pointer;
     margin-left: 1rem;
+    height: 40px;
     padding: 0.5rem 1rem;
+    margin-top: 30vh;
 }
 
 .botao-finalizar:hover {
@@ -621,6 +623,7 @@ main {
     color: #000000;
     flex-grow: 1;
     margin-top: 2vh;
+    margin-top: 30vh;
 }
 
 .quantidade-input {
